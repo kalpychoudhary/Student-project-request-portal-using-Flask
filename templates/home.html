@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Platform</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* Include Poppins font */
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #222, #1e1e1e);
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8em; /* Adjust font size slightly */
+      line-height: 1.5; /* Set line-height for two lines */
+      margin-bottom: 20px;
+      animation: fade-in 2s ease-in-out forwards;
+      color: #fff;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      color: #fff;
+      font-weight: bold; /* Make button text bold */
+    }
+
+    .register-btn {
+      background-color: #4CAF50;
+    }
+
+    .register-btn:hover {
+      background-color: #3e8e41;
+    }
+
+    .login-btn {
+      background-color: #3498DB;
+    }
+
+    .login-btn:hover {
+      background-color: #2980b9;
+    }
+
+    /* Typing Effect for the second h1 element */
+    .typing {
+      overflow: hidden;
+      border-right: .15em solid rgba(0,0,0, .2); /* Simulate blinking cursor */
+      white-space: nowrap; /* Prevent wrapping */
+      margin: 0 auto;
+      letter-spacing: .03em; /* Adjust letter spacing if needed */
+      animation: typing 3.5s steps(40, end), blink-cursor .5s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-cursor {
+      from, to { border-color: rgba(0,0,0, .2); }
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome!</h1>
+  <h1 class="typing">Submit your project requests</h1>
+  <div class="button-container">
+    <button class="register-btn">Register</button>
+    <button class="login-btn">Login</button>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
