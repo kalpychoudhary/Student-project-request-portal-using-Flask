@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* Include Poppins font */
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #222, #1e1e1e);
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8em; /* Adjust font size slightly */
+      line-height: 1.5; /* Set line-height for two lines */
+      margin-bottom: 20px;
+      animation: fade-in 2s ease-in-out forwards;
+      color: #fff;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .form-container { /* New container for the form */
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+      padding: 30px;
+      border-radius: 5px;
+      width: 400px;
+    }
+
+    form {
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Registration</h1>
+
+  <div class="form-container"> <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="entryNumber">Entry Number:</label>
+      <input type="number" id="entryNumber" name="entryNumber" required>
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
+
